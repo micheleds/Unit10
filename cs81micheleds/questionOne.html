@@ -1,0 +1,28 @@
+<!--Use the animate() method to set the fontsize-->
+<!--of <div> to 100 pixels.-->
+<!--The duration of the effect should be "slow".-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("div").animate({fontSize: "100px"}, "slow");
+            });
+            $(".btn2").click(function(){
+                $("div").animate({fontSize: "1em"}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+
+<button class="btn1">Animate</button>
+<button class="btn2">Reset</button>
+
+<div style="background: #98bf21;height: 200px; width: 600px">Hello World</div>
+
+</body>
+</html>
